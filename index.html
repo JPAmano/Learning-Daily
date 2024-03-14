@@ -20,6 +20,29 @@
         <button type="button" onclick="getName();">Submit</button>
     </div>
 
+    <br>
+
+    <div class="divInputs">
+        <label for="Number">Number:</label>
+        <input type="number" name="Number" id="Number" placeholder="e.g 1 2 3 4 5" pattern=" /^[a-zA-Z0-9]{6,}$/"
+            required>
+        <button type="button" onclick="getNum();">Check</button>
+    </div>
+    <h1 id="headerOutput2"></h1>
+
+    <div class="Div1">
+        <label for="number1">Number1:</label>
+        <input type="number" name="num1" id="number1" placeholder="e.g 12356789">
+        <br><br>
+        <label for="number2">Number2:</label>
+        <input type="number" name="num1" id="number2" placeholder="e.g 12356789">
+        <br><br>
+        <button type="button" onclick="getSum();">Add</button>
+        <button type="button" onclick="getquotient();">Multiply</button>
+
+        <h1 id="sumResult"></h1>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 

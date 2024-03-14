@@ -1,10 +1,34 @@
 document.querySelector("body").style.backgroundColor = "beige";
 
+// TODO:  "Get name and display the output"
 function getName() {
   let name = document.getElementById("Name").value;
   document.getElementById("headerOutput").innerHTML = "Hello, " + name;
 }
+//  TODO: Get the number and get its square root
+function getNum() {
+  let num1 = document.getElementById("Number").value;
+  document.getElementById("headerOutput2").innerHTML =
+    "You choose number," +
+    num1 +
+    "the square root of that number is, " +
+    Math.sqrt(num1);
+}
+// TODO: Get the two numbers and ADD them together
+function getSum(num1, num2, result) {
+  num1 = parseInt(document.getElementById("number1").value);
+  num2 = parseInt(document.getElementById("number2").value);
+  result = num1 + num2;
+  document.getElementById("sumResult").innerHTML = result;
+}
 
+// TODO: Get the two numbers and MULTIPLY them together
+function getquotient(num1, num2, result) {
+  num1 = parseInt(document.getElementById("number1").value);
+  num2 = parseInt(document.getElementById("number2").value);
+  result = num1 * num2;
+  document.getElementById("sumResult").innerHTML = result;
+}
 let myArray = ["red", "blue", "orange", "green"];
 let arrayIndex = 0;
 
